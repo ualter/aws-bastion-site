@@ -8,8 +8,8 @@ In order to manage the start of your AWS Session, to connect with your EC2 Basti
 
 
   - [**Requirements**](#requirements)
+  - [**Installation**](#installation)
   - [**AWS Session loading sequence precedence**](#aws-session-loading-sequence-precedence)
-
 
 --- 
 
@@ -23,6 +23,13 @@ $ session-manager-plugin
 The Session Manager plugin was installed successfully. Use the AWS CLI to start a session.
 ```
 - **ssh** 
+
+---
+
+### **Installation**
+
+
+---
 
 ### **AWS Session loading sequence precedence**
 1. Use the explict AWS Profile parameter informed: 
