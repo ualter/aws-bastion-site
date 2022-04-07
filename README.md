@@ -1,4 +1,4 @@
-## **AWS-BASTION**
+## **AWS-Bastion**
 ---
 A utility tool to help management the interaction with a *EC2 Bastion (Managed Instance) through AWS SSM. It starts a SSH tunnel over a AWS SSM Session, making available a SOCKS Proxy for connections with private addresses in your AWS Account. It also allows run shell commands remotely at this connected EC2 Bastion.
 
