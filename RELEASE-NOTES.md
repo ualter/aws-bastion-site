@@ -1,6 +1,9 @@
 ### RELEASE NOTES
 ---
 
+- **v0.2.7**
+  - **Fixes**: Reading the ssh user from ~/.ssh/config file
+---
 - **v0.2.6**
   - **Cosmetics**: Emoticon at title, different colors.
   - **Internals**: Code refactoring.
