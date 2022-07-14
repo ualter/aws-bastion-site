@@ -1,6 +1,9 @@
 ### RELEASE NOTES
 ---
 
+- **v0.2.8**
+  - **Improvements**: Allow inform the SSH user during the ~/.ssh/config file creation
+---
 - **v0.2.7**
   - **Fixes**: Reading the ssh user from ~/.ssh/config file
 ---
