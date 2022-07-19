@@ -1,6 +1,9 @@
 ### RELEASE NOTES
 ---
 
+- **v0.2.9**
+  - **Improvements**: Increasing the SSH Public Key removal timeout for from 10 to 40 sec, in case of slow internet connections
+---
 - **v0.2.8**
   - **Improvements**: Allow inform the SSH user during the ~/.ssh/config file creation
 ---
