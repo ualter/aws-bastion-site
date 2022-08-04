@@ -9,6 +9,7 @@ In order to manage the start of your AWS Session, to connect with your EC2 Basti
 
   - [**Requirements**](#requirements)
   - [**Installation**](#installation)
+  - [**Usage Samples**](#usage-samples)
   - [**AWS Session loading sequence precedence**](#aws-session-loading-sequence-precedence)
 
 --- 
@@ -30,9 +31,25 @@ The Session Manager plugin was installed successfully. Use the AWS CLI to start 
 
 :cd: Download:
 - https://github.com/ualter/aws-bastion-site/releases
-  - [aws-bastion-v0.2.9-linuxAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.9/aws-bastion-v0.2.9-linuxAmd64.tar.gz)
-  - [aws-bastion-v0.2.9-windowsAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.9/aws-bastion-v0.2.9-windowsAmd64.tar.gz)
-  - [aws-bastion-v0.2.9-darwinAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.9/aws-bastion-v0.2.9-darwinAmd64.tar.gz)
+  - [aws-bastion-v0.2.10-linuxAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.10/aws-bastion-v0.2.10-linuxAmd64.tar.gz)
+  - [aws-bastion-v0.2.10-windowsAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.10/aws-bastion-v0.2.10-windowsAmd64.tar.gz)
+  - [aws-bastion-v0.2.10-darwinAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.10/aws-bastion-v0.2.10-darwinAmd64.tar.gz)
+
+---
+
+### **Usage Samples**
+
+```bash
+# How to use it
+$ aws-bastion -h
+
+# Configure and Instance in ~/.ssh/config if does not exist and connect to it
+$ aws-bastion -i  i-08f6194a9847e645
+$ aws-bastion -i  i-08f6194a9847e645 -u ec2-user
+$ aws-bastion -i  i-08f6194a9847e645 -u ec2-user -b github.developer.mycompany.io
+# If every configuration is set at ~/.aws-bastion/aws-bastion.yaml, runs only:
+$ aws-bastion
+```
 
 ---
 
@@ -42,11 +59,25 @@ The Session Manager plugin was installed successfully. Use the AWS CLI to start 
 2. Use the AWS Profile configured at the configuration file:
    - Configuration file: `~/.aws-bastion/aws-bastion.yaml`
    - AWS Profile parameter:
-     ```yml
-     aws-session:
-       profile: developer
+     ```yaml
+      aws-session:
+        profile: devops
+      bastionhost:
+        instance-ids:
+        - "i-1879e2f1cf6209154"
+        instance-tags: ""
+      chrome-no-proxy:
+        - "github.developer.mycompany.io"
+        - "2fa-auth.sso.mycompany.io"  
+      chrome-path: C:\PROGRA~2\Google\Chrome\Application\chrome.exe
+      messages:
+        output: 1
+      ssh:
+        bitsize: 4096
+        save: false
+        show: true
      ```
-    - ***Hint***: in case a value is configured in the file, and if still you don't want to use this or ANY other profile (empty), use the parameter: `p- none` without have to change the configuration file, then the next step will be chosen.
+    - ***Hint***: in case a value is configured in the file, and if still you don't want to use this or ANY other profile (empty), use the parameter: `-p ""` without have to change the configuration file, then the next step will be chosen.
   
 3. Use AWS Session available in Environment Variable O.S.
    

@@ -1,6 +1,13 @@
 ### RELEASE NOTES
 ---
 
+- **v0.2.10**
+  - **Improvements**: 
+    - Credentials STS Token: Storage, loading and reusing while valid (not expired)
+    - Assume Role STS Token: Storage, loading and reusing while valid (not expired)
+    - Assume Role STS Token automatically refreshed 60 seconds before expiration
+    - Passing proxy-bypass domains for Chrome configured with SOCKS (no proxy for)
+---
 - **v0.2.9**
   - **Improvements**: Increasing the SSH Public Key removal timeout for from 10 to 40 sec, in case of slow internet connections
 ---
