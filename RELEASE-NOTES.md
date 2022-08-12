@@ -1,6 +1,11 @@
 ### RELEASE NOTES
 ---
-
+- **v0.2.11**
+  - **Improvements**: 
+    - Implemented tracing/debug logging directed to local files (help remotely troubleshooting)
+  - **Fixes**:
+    - Checking expiration date logic verified
+---  
 - **v0.2.10**
   - **Improvements**: 
     - Credentials STS Token: Storage, loading and reusing while valid (not expired)
