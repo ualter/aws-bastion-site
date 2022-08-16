@@ -1,5 +1,10 @@
 ### RELEASE NOTES
 ---
+- **v0.2.12**
+  - **Fixes**: 
+    - Updated dependency libraries with their fixings (logging)
+    - Using AWS SSO Session, previously set, through Environment Variables
+---
 - **v0.2.11**
   - **Improvements**: 
     - Implemented tracing/debug logging directed to local files (help remotely troubleshooting)

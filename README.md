@@ -31,9 +31,9 @@ The Session Manager plugin was installed successfully. Use the AWS CLI to start 
 
 :cd: Download:
 - https://github.com/ualter/aws-bastion-site/releases
-  - [aws-bastion-v0.2.11-linuxAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.11/aws-bastion-v0.2.11-linuxAmd64.tar.gz)
-  - [aws-bastion-v0.2.11-windowsAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.11/aws-bastion-v0.2.11-windowsAmd64.tar.gz)
-  - [aws-bastion-v0.2.11-darwinAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.11/aws-bastion-v0.2.11-darwinAmd64.tar.gz)
+  - [aws-bastion-v0.2.12-linuxAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.12/aws-bastion-v0.2.12-linuxAmd64.tar.gz)
+  - [aws-bastion-v0.2.12-windowsAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.12/aws-bastion-v0.2.12-windowsAmd64.tar.gz)
+  - [aws-bastion-v0.2.12-darwinAmd64.tar.gz](https://github.com/ualter/aws-bastion-site/releases/download/v0.2.12/aws-bastion-v0.2.12-darwinAmd64.tar.gz)
 
 ---
 
