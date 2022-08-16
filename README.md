@@ -54,9 +54,13 @@ $ aws-bastion
 ---
 
 ### **AWS Session loading sequence precedence**
-1. Use the explict AWS Profile parameter informed: 
+
+1. Use AWS Session available in Environment Variable O.S.
+
+2. Use the explict AWS Profile parameter informed: 
    - `-p developer`
-2. Use the AWS Profile configured at the configuration file:
+   
+3. Use the AWS Profile configured at the configuration file:
    - Configuration file: `~/.aws-bastion/aws-bastion.yaml`
    - AWS Profile parameter:
      ```yaml
@@ -79,8 +83,6 @@ $ aws-bastion
      ```
     - ***Hint***: in case a value is configured in the file, and if still you don't want to use this or ANY other profile (empty), use the parameter: `-p ""` without have to change the configuration file, then the next step will be chosen.
   
-3. Use AWS Session available in Environment Variable O.S.
-   
 4. USe the AWS default profile
 
 ---
