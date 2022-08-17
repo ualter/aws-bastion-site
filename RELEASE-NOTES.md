@@ -1,5 +1,9 @@
 ### RELEASE NOTES
 ---
+- **v0.2.13**
+  - **Improvements**: 
+    - Minor logging improvements
+---
 - **v0.2.12**
   - **Fixes**: 
     - Updated dependency libraries with their fixings (logging)
