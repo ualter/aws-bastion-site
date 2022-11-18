@@ -1,5 +1,9 @@
 ### RELEASE NOTES
 ---
+- **v0.2.14**
+  - **Fixex**: 
+    - Adjustments and fixing with credentials that never expires
+---
 - **v0.2.13**
   - **Improvements**: 
     - Minor logging improvements
