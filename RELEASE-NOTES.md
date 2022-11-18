@@ -1,5 +1,9 @@
 ### RELEASE NOTES
 ---
+- **v0.2.15**
+  - **Fixes**: 
+    - Wrong configuration of ssh config when a new Instance Bastion is inserted along with a non-default user session
+---
 - **v0.2.14**
   - **Fixes**: 
     - Adjustments and fixing with credentials that never expire
